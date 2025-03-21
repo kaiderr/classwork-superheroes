@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Form</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <h1><a href="../index.html">Marvel Comics</a></h1>
+    <nav>
+        <span class="link-title"><a href="../index.html">Home</a></span>
+        <div class="dropdown">
+            <span class="navtitle">Superheroes <i class="arrow"></i></span>
+            <div class="dropdown-links">
+                <a href="spiderman.html">Spider-Man 🕸</a>
+                <a href="captainamerica.html">Captain America 🛡️</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="navtitle">Villains <i class="arrow"></i></span>
+            <div class="dropdown-links">
+                <a href="kingpin.html">Kingpin 👑</a>
+                <a href="loki.html">Loki ⭐️</a>
+            </div>
+        </div>
+        <span class="link-title"><a href="form.html">Contact</a></span>
+        <span class="link-title"><a href="rules.html">New Rules</a></span>
+
+    </nav>
+
+    <h2>Submission Form</h2>
+    <main id="form-main">
+        <!-- (does not submit an actual form for the purpose of the assignment)  -->
+        <form id="form">
+            <div class="form-section">
+                <label for="email">Email: </label>
+                <input id="email" type="email">
+            </div>
+            <div class="form-section">
+                <label for="pref-media">Preferred Media: </label>
+                <select id="pref-media">
+                    <option value="select">Select an option</option>
+                    <option value="comics">Comics</option>
+                    <option value="film">Film</option>
+                    <option value="tv">TV Series</option>
+                    <option value="all">All of the Above</option>
+                </select>
+            </div>
+            <div class="form-section textarea">
+                <label for="question">Type your question or concern below!</label>
+                <textarea name="question" id="question" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-section">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+        <p style="font-size: medium; width: 500px; margin: 10px auto;">Do you want to ask us a question? Reach out to us through this form! You can ask us anything from informational guidance, requests to add new characters, and additions and corrections to our pages. Enter your email and preferred media type, as well as your question. We will respond to your inquiry as soon as we can! <br>
+            The media type question is a question to try and get to know our audience better. It is completely optional if you do not wish to answer. If you do not want to fill out the form, you can directly email us at marvelcomicfan@email.com. Thanks for your interest and support!</p>
+        
+    </main>
+    
+</body>
+</html>

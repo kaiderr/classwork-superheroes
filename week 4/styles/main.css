@@ -1,0 +1,146 @@
+/*------------  BODY  ------------  */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*------------  TITLE ------------  */
+h1{
+    margin: 50px;
+    padding-top: 30px;
+}
+/*------------  NAVIGATION ------------  */
+nav {
+    background-image: linear-gradient(to right, rgb(0, 174, 255), rgba(255,0,0,1));
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.arrow { /* reference for arrow https://www.w3schools.com/howto/howto_css_arrows.asp*/
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    
+}
+/* drop down menu titles */
+.navtitle {
+    background-color: rgb(252, 217, 217);
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+/* nav bar titles that are links */
+.link-title {
+    background-color: rgba(240, 248, 255);
+    padding: 4px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.link-title:hover{
+    background-color: rgb(193, 223, 249);
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+.dropdown-links {
+    display: none;  /* hides links when not hovered */
+    position: absolute;  /* keeps links in place */
+    background-color: white;  /* makes background opaque */
+   
+}
+/* dropdown hover */
+.dropdown:hover .dropdown-links{
+    display: block; 
+    box-shadow: 0px 0px 10px 2px black;
+    background-color: rgb(255, 243, 190);
+    margin: 4px 10px;
+}
+/* individual links */
+.dropdown-links a{
+    min-width: 200px;  
+    display: block; 
+    padding: 5px; 
+}
+/* individual links when hovered */
+.dropdown-links a:hover{
+    background-color: rgb(255, 253, 233);
+    text-decoration: underline;
+}
+
+
+/*------------  MAIN PAGE ------------  */
+main {
+    width: 1000px;
+}
+main p::first-letter{
+    font-size: 1.8rem;
+}
+h2 { 
+    padding-top: 20px;
+    margin-top: 100px;
+}
+.imgDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgDiv p {
+    width: 500px;
+}
+
+.imgDiv img {
+    box-shadow: 0px 5px 20px;
+    transition-property: height;
+    transition-duration: 500ms;
+}
+.imgDiv img:hover{
+    height: 450px;
+}
+figcaption{
+    font-size: .9rem;
+}
+
+/*------------  FORM ------------  */
+#form-main{
+    display: flex;
+    flex-direction: column;
+}
+#form{
+    width: 500px;
+    background: #9ccad5;
+    background: linear-gradient(#8fcfe0, #e0f2f7);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.form-section {
+    margin: 10px;
+}
+.textarea label{
+    display: block;
+}
+#submit {
+    border: none;
+    background-color: rgb(159, 213, 159);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(30, 45, 30);
+    border-radius: 5px;
+}
+#submit:hover{
+    cursor: pointer;
+}
